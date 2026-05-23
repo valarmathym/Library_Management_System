@@ -1,0 +1,35 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: blue; 
+    height: 100vh;
+}
+#login .container #login-row #login-column #login-box {
+    margin-top: 60px;
+    max-width: 600px;
+    height: 320px;
+    border: 1px solid #9C9C9C;
+    background-color: #EAEAEA;
+}
+
+#login .container #login-row #login-column #login-box #login-form {
+    padding: 40px;
+}
+#result{
+    color:blue;
+}
+.login-container #member-login{
+    border: 1px solid blue;
+    background-color: blue;
+    display:flex;
+    flex-direction: row;
+    max-width: 400px;
+    height: 320px;
+    margin:auto;
+}
+.login-container #admin-login{
+    border:1px solid red;
+    max-height: 20rem;
+    max-width: 25rem;
+}

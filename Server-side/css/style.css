@@ -1,0 +1,907 @@
+*{
+    margin:0em;
+    padding: 0em;
+    border-style: none;
+    box-sizing: border-box;
+}
+
+body{
+   font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+   scroll-behavior: smooth;
+     margin:auto; 
+     padding-bottom: 0;
+     min-height:100vh;
+    
+}
+.wrapper{
+    height:auto;
+   min-height: 100vh;
+    width:100%; 
+    flex: 1 1 auto;
+    position:relative;
+    margin:auto;
+    margin-top: auto;
+    margin-bottom: 2rem;
+}
+#nav{
+    display:flex;
+    flex-direction: row;
+    margin: auto;
+    max-width:100%;
+}
+
+.nav-menu .nav-link{
+    font-size: 0.9rem;
+    padding:0;
+    margin: auto;
+}
+.uni-name-nav h1{
+    text-align:center; 
+     font-size: 1.2rem; 
+     color:rgb(6, 6, 54);
+}
+.uni-name-nav{
+    display:flex;
+    flex-direction: row;
+    padding:0.4rem;
+    text-align: center;
+}
+/****************************************    HEADER     *****************************/
+header{
+    height:11rem; 
+    padding-top: 1.4rem;
+    margin-top: 1rem;
+    color:#3c1f04;
+    display:flex;
+    flex-direction: row;
+    width:100%; 
+    background-color: hsl(0, 64%, 98%);
+    margin:auto; 
+}
+header span{
+    display:flex;
+    flex-direction: row;
+    line-height: 0.8em;
+    width:14rem;
+    font-size: 1.6rem;
+    font-weight: 800; 
+}
+header #home-page{
+    padding: 3rem 2rem 1.6rem 1rem;
+}
+/*************************************HAMBURGER MENU FOR MOBILE SCREEN   ***********************************/
+.hamburger{
+    display: none;
+    cursor: pointer;
+    position:absolute;
+    right:30px;
+    top:10px;  
+}
+.bar{
+    display: block;
+    width: 25px;
+    margin: 5px;
+    height: 2px;
+    position: relative;
+    transition: all 0.4s ease-in-out;
+    background-color:rgb(87, 7, 7);
+}
+#menu-toggle{
+    display:none;
+}
+
+.nav-logo{
+        display:flex;
+        flex-direction:row;
+        float:left;
+        top:3.3rem;
+        left:2rem;
+        position: absolute;
+        margin-left:1.7rem;
+        max-width:7rem;
+        height:auto;
+        align-items: center;
+        padding-top:2.9rem;    
+}
+.nav-logo span {
+    display:flex;
+    flex-direction: row;
+     color: rgb(8, 20, 128);
+      padding: 1.6rem 0.2rem;
+      font-size: 1.4rem;
+      font-weight: 700;
+      width:14rem;
+}   
+/*****************************************  NAVIGATION *************************/
+.nav-container{
+    padding-top:2.2rem;
+    max-height: 24rem;
+     overflow:hidden;
+ 
+}                 
+.nav-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+     align-items: center;
+    list-style: none;  
+    font-size: 0.8rem; 
+    line-height: 5rem; 
+    position: absolute; 
+    background-color: hsl(263, 42%, 14%);
+     top:6.2rem;
+    width:100%;
+    object-fit: contain;
+     opacity: 0.8;
+     z-index: 1;
+     padding:0 4rem;
+ 
+}
+.nav-menu a{
+   
+    color: hsl(30, 14%, 97%);
+    font-weight: 700;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav-menu a:hover{
+     border:1px solid #4ca2f4;
+    color: hwb(125 6% 5%); 
+    font-size: 1.1rem;
+}
+
+.nav-link{
+    text-decoration: none;
+}
+.nav-item{
+    text-align: center;
+    margin:0;
+}
+
+/*******************************    ADMIN DASHBOARD   ***********************************************/
+
+
+.admin-dash{
+        display:flex;
+        flex-direction: column;
+         width:100%;
+        width:100vw;
+        margin:auto; 
+        height:auto; 
+       height:80rem; 
+       background-color: #f0eeee;
+        overflow-x:hidden;
+        padding-top:0.2rem;
+        margin-top:auto;
+        
+}
+.admin-dash h1{
+    font-size: 2.2rem;
+    width:100%;
+    text-align:center;
+  
+}
+.flex-container{
+        display:flex;
+        flex-direction: row;
+        width:100vw;
+        flex-wrap:wrap;
+        font-size:1.3rem;
+        max-width:90%;
+        justify-content: center;
+        overflow-y: auto;
+        margin:auto;
+        
+        padding: 1rem 1rem;
+}
+.flex-item-left{
+    display:flex;
+    flex-direction: column;;
+        flex: 16rem;
+        width:100%;
+          padding-top: 0.4rem;  
+         
+}
+.flex-item-left ul{
+    border:1px solid grey;
+     display:flex;
+     flex-direction: column;
+     font-weight:800;
+     padding:0 0.5rem;
+     height: auto;
+}
+.flex-item-left ul li{
+
+        display:flex;
+        flex-direction: column;
+        padding:1rem 0;
+        text-align: left;
+        list-style: none;
+        height:auto;
+        font-size: 1rem;
+        line-height: 1.8rem;
+}
+.flex-item-left ul li a{
+    text-decoration: none;
+    padding:0.8rem 0.4rem;
+    font-size:1.3rem;
+    line-height: 1.5;
+    color: #11063e;
+} 
+.flex-item-left ul li a:hover{
+    color: white;
+    font-size: 1.5rem;
+    background-color: rgb(19, 126, 55);
+}
+
+.flex-item-right{
+        display: flex;
+        flex-direction: column;
+        overflow-y: auto;
+         padding-top: 0.4rem;
+         padding-left: 1rem;  
+        flex: 74%;
+        width:100%;
+        height:auto;
+        float:right;
+       margin: auto;  
+        text-align: left;
+        
+}
+.flex-item-right a:hover{
+    color: white;
+    font-size: 1.3rem;
+    background-color: rgb(19, 126, 55);
+}
+.flex-item-right a{
+    color:rgb(131, 16, 16);
+   
+
+}
+.admin-side #admin-nav ul li{
+    display:flex;
+    flex-direction: column;
+   padding:0.5rem 0;
+    text-align: left;
+    width:100%; 
+    height:auto;
+    font-size:1.2rem;
+    line-height: 1.5;
+}
+.user-side{
+    /*background-color: #ccccce; */
+    float:left;
+}
+#ad-content{
+    display: flex;
+    flex-direction: column;
+    float: left;
+    width: 90%;
+    height:auto;
+    margin: auto;
+    text-align: left;
+}
+
+#ad-content img{ 
+    width:65%;
+    height:65%;
+    align-content: center;
+    justify-content: space-around;
+    left:2rem;
+    right:0;
+    margin:auto;
+}
+#ad-content #ad-home{
+    display:flex;
+    flex-direction: row;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+#ad-content ul li{
+    text-align: left;
+    font-size: 1.2rem;
+    color: rgb(6, 6, 56);
+    font-weight: 800;
+    list-style: none;
+    text-align:center;
+    justify-content: center;
+    line-height: 1.5;
+    width: 100%;
+    padding:4rem 0rem;
+    border: 2px solid rgb(146, 142, 146);
+    background-color: #f8ebbd;   
+}
+
+ #ad-content th{
+        text-align: center;
+        justify-content: center;
+        font-size: 1.3rem;
+        color: rgb(6, 6, 56);
+        font-weight: 600;
+        line-height: 1.5;
+        margin:auto;
+        padding:1rem; 
+ } 
+ #ad-content #insert{
+        border:2px solid rgb(45, 9, 176);
+        text-align: right;
+        width:25%;
+        padding:0.3rem;
+        text-align: center;
+        justify-content:flex-end;
+        font-size:1.1rem;
+        color:rgb(81, 13, 13);
+        font-weight: 800;
+} 
+
+ #user-home li{
+    list-style: none;
+    font-weight:800;
+    font-size: 1.4rem;
+   
+    padding:0.8rem; 
+} 
+#change_pass{
+    margin:auto;
+}
+#edit-user label{
+    width: 20rem;
+    height:3rem;
+}
+#edit-user input{
+    width: 20rem;
+    height: 3rem;
+
+}
+#change_pass table{
+    margin:auto;
+    width: 70%;
+    padding-left: 3rem;
+
+}
+table{
+        display:flex;
+        flex-wrap:wrap;
+        width:90%;
+        height:auto;
+        border-collapse:collapse;
+        background-color:#decbcb;
+        align-content: center;
+        overflow-x:auto;
+        margin-top:1rem;
+        padding:1.1rem; 
+        height:auto;
+        padding-bottom: 3rem;
+         margin:auto;
+    }
+table tr{ 
+    text-align:center; 
+    /*padding:25px 0px 40px 0px;  */
+}
+table a{
+    border:1px solid rgb(34, 15, 236);
+   /* background-color:hsl(40, 37%, 97%); */
+    padding:0.1rem 0.3rem;
+    color:rgb(125, 18, 18);
+    /*align-items: center;*/
+   
+}
+table th{
+    margin:1rem;
+    padding:1rem;
+    background-color: #83bef5;
+    color:rgb(17, 17, 46);
+    font-weight: 800;
+    font-size: 1.3rem;
+}
+
+table td,table th{
+    text-align: center;
+    border:2px solid #ccccce;
+    padding:0.8rem;
+    font-weight: 500;
+    line-height: 1.5;
+   
+}
+
+.col-md-18{
+     padding:1.2rem;
+     margin:0.5rem;
+     margin:auto;
+     border-radius: 2px;
+   
+}
+.col-md-18 td label{
+     background-color: rgb(44, 146, 210);
+
+}
+
+/*********************************************************     USER DASHBOARD  ************************/
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 3rem;
+    padding-top: 1.5rem;
+}
+
+.book-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+    gap: 1.5rem;
+    max-width: 100%;
+    margin: auto;
+}
+
+.book-card {
+    background: white;
+    padding: 1rem;;
+    margin:0.7rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    text-align: center;
+}
+
+.book-card img {
+    width: 9rem;
+    height: 14rem;  
+    object-fit:cover;
+    margin-bottom: 0.4rem;
+    border-radius: 5px;
+}
+
+.book-card h3 {
+    font-size:1.4rem;
+    margin: 0.4rem 0.2rem;
+    color: #222;
+    font-weight: 800;
+}
+
+.book-card p {
+    padding:0.07rem;
+    font-size: 0.9rem;
+    color: #555;
+    font-weight:700;
+}
+
+/*********************************************************************************/
+
+#section{
+    background-image: url('img/library-hero3.jpg');
+    margin-top: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+     color: #f5f2f2;
+    text-decoration: none;
+    list-style: none;
+    height:50rem;
+    width:100%;
+    margin:auto;
+}
+section h1{
+    text-align:center; 
+    font-size:1.3rem; 
+    color:white;
+}
+#index-section{
+     align-items: center;
+     color: #f5f2f2;
+     height: 80rem;
+     height: auto;
+}
+.container mx-auto{
+    height:55rem;
+}
+
+.nav-logo{
+    float:left;
+    position: absolute;
+    left:0.3em;
+    top: 0.3em;
+    padding-bottom:0.1rem;
+    opacity: 0.7;
+    z-index: 1;
+    width:1rem;
+    height:1rem;          
+}
+section .box{
+   
+     color: white;
+      text-decoration: none;
+       list-style: none;  
+      
+}
+/*-------------------------       -INDEX PAGE OPENING HOURS BOX      ____________________________________*/
+.box{
+    height:17rem;
+    width: 27rem;
+    align-items: center;
+    background-color:rgb(40, 45, 83);
+     margin:auto;
+    opacity:0.6;
+}
+.box ul li{
+   text-align: center; 
+   font-size: 1.5rem;
+}
+    
+.container h1, li{
+   align-items: center;
+   color:white;
+   text-align: center;
+} 
+
+/********************************                NAVIGATION   BAR           ***************************************/
+
+#home .index-container{
+  display:flex;
+    flex-direction: row;
+    top:2px;
+    justify-content: space-between;
+    align-items:center;
+    margin: 0 auto;
+    padding: 1rem;
+    width:100%;
+}
+.uni-name-nav{
+    display:flex;
+    flex-direction:column;
+}
+
+.uni-name-nav ul{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+    
+}
+.uni-name-nav ul li{
+     padding: 0 2rem;
+    font-size: 1.3rem;
+    font-weight: 900;
+  }
+ .uni-name-nav  .nav-item{
+    padding:0 3rem;
+  }
+.uni-name-nav ul li a:hover
+{
+    border:1px solid red;
+    color: #551a1a; 
+    background-color: rgb(168, 209, 244);
+}
+
+/*--------------Navigational links to Login, Register pages      ------------------------------------*/
+.sign-item{
+    display:flex;
+    flex-direction: row;
+    text-align: right;
+    list-style: none;
+    right:0;
+    font-weight: 800;
+}
+h1{
+    font-size:2.1rem;
+    color: rgb(60, 11, 83);
+    font-weight: 700;
+    text-align: center;
+    align-items: center;
+    
+}
+
+/**************************   Login page and admin page forms--*****************************************/
+#member-login, #admin-login{
+    width:20rem;
+    color:rgb(42, 3, 3); 
+    
+}
+#login-box, #register-box {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 8px;
+ 
+}
+
+#decor-member, #deocr-admin, #register-form, h1{
+    color: rgb(23, 23, 87);  
+}
+
+#decor-member{
+        top:5rem;
+        background-color:hsl(230, 58%, 88%);
+        border:2px solid rgb(54, 10, 10);
+        padding:1.2rem;
+        max-width: 100%;
+        height:auto;
+        margin:auto;
+        opacity:0.9;
+    }
+#decor-admin{
+       top:4rem;
+        background-color: hsl(230, 58%, 88%);
+        border:2px solid rgb(61, 60, 60);
+        padding:1.3rem;
+        max-width: 100%; 
+        height:auto; 
+        margin:auto;
+        opacity:0.9;
+}
+.form-group{
+    text-align: left;
+}
+html{
+    padding-bottom:0;
+}
+.success{
+    font-size: 2.3rem;
+    color:white;
+    text-align: center;
+    width:100%;
+}
+.error{
+   color:red;
+   font-size: 1.2rem;
+}
+#login-container,#login-box, h1{
+    color:rgb(30, 5, 42);
+    text-align:center;
+    margin:0 auto;
+   
+}
+.login-container, .container {
+    padding:0; 
+    margin:0 auto;
+    align-items: start;
+    max-width: 100%;
+}
+.login-container h1{
+     position: absolute;
+    top:10%;
+    margin:auto;
+
+}
+.login-container h1{
+   
+    font-size: 1.6rem; 
+    color:white;
+}
+#login-box{
+    padding: 1.1rem;
+    max-width:100%;
+}
+
+#register-box{
+    border:2px solid rgb(134, 134, 139);
+    background-color: hsl(230, 58%, 88%);
+    padding:0.6rem 1.3rem;
+    margin:1rem;
+    max-width: 400px;
+    text-align: left;
+    color:rgb(56, 56, 109); 
+    height:auto;
+    opacity:0.9;
+    padding-bottom: 0.5rem;
+}
+h1{
+    font-size:1.6rem;
+    text-align:center;
+}
+h2{
+  font-size:1.2rem;
+    text-align:center;
+}
+
+#decor-admin h1, a, #decor-member h1, a, #register-box h1, a{
+    color:rgb(28, 7, 92);
+    font-weight:700;
+}
+span{
+    color:red;
+}
+h7{
+    color:rgb(72, 5, 82)
+}
+.text-info, .form-group{
+    color:rgb(14, 14, 239);
+}
+
+
+#index-section{
+    height: 60rem;
+}
+/**********************************************FOOTER   ************************************/
+footer{
+        margin:auto;
+        margin-top: auto;
+        width: 100%;
+       padding-bottom: 0;
+        position:fixed;
+        bottom:0;
+   
+}
+.footer{
+     display:flex;
+    flex-direction: column;
+     margin:auto;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    height:6rem;
+    width:100%;
+    font-size:0.7rem; 
+    font-weight:900;
+     color:white;
+    background-color: rgb(17, 17, 63);
+} 
+.footer a{
+    color:white;
+}
+/********************************************MEDIA QUERY    **********************************/
+
+@media screen and (min-width: 320px) and (max-width: 767px){  
+
+    header{
+            height: 11rem; 
+        }
+    .main{
+            max-width:100%;
+            height:auto;  
+        }
+    .nav{
+      
+        color: #5c0909;
+        padding: 1rem 0;  
+     
+      }
+     
+    .nav-logo{
+       position: absolute;
+       max-width:30%;
+       max-height: 24%;
+       top:0.6rem;
+    }
+    #menu-toggle{
+        top: 0.9rem;
+        right: 0;
+    }
+ 
+   .nav-menu{
+        display:none;
+        flex-direction: column;
+        width: 35%;
+        padding: 1.2rem 1rem;
+        top: 7.2rem;
+        left: 0.2rem;
+        align-items: flex-start;
+        background-color: hsl(230, 70%, 48%);
+        z-index: 2;
+        opacity: 0.7;
+        position:absolute;
+    }
+    .nav-menu a{
+        top: 2.3rem;
+        left: 0.2rem;
+        padding-bottom: 0.7rem;
+        color: rgb(248, 247, 246);
+        font-weight: 700;
+        justify-content: space-around;
+        align-items: center;
+}
+    .nav-menu a{
+        padding:0.2rem;
+        
+    }
+    .nav-item{
+      margin: 0.2rem;
+      font-size: 1.1rem;  
+    }
+
+    .nav-menu.active{
+        display: flex;
+        max-width:80px;
+    }
+    
+    #menu-toggle:checked ~.nav-menu{
+        display: flex;
+    }
+     .hamburger{
+        display: block; 
+        padding-right: 8px;
+        padding-top: 10px;
+    }
+
+/***************************************************ADMIN DASHBOARD   ****************************/
+
+.admin-dash{
+    display: flex;
+    flex-direction: column;
+}
+.admin-dash h1{
+    font-size: 1.6rem;
+    font-weight: 800;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row;
+    padding-top:1rem;
+    width: 100%;
+    font-size: 1rem;
+    margin-top:0.5rem;
+    
+}
+.flex-item-left {
+       display:flex;
+       flex-direction: row;
+        flex-wrap: wrap;
+       font-size: 1.1rem;
+        flex: 100%;
+        width:100%;
+        font-weight: 700; 
+      
+}
+.flex-item-left ul{
+        display:flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+}
+.flex-item-left ul{
+     width:100%;
+     font-weight:800;
+     padding:1rem 1.1rem;
+     margin: auto;
+}
+.flex-item-left ul li{
+   border:1px solid rgb(141, 141, 143);  
+    padding:0.4rem 1.3rem;
+     display:flex;
+     flex-direction: column;
+
+}
+.flex-item-left ul li a{
+    text-decoration: none;
+    padding:0.2rem 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.2;
+    color: #11063e;
+} 
+.flex-item-left ul li a:hover{
+    color: white;
+    font-size: 1.1rem;
+    background-color: rgb(19, 126, 55);
+}
+
+table{
+   display:flex;
+   flex-direction: column;
+   width:100%;
+   flex-wrap:wrap;
+}
+.user-side ul li{
+    display:flex;
+    display:inline-block;
+    margin-right: 0.6rem;
+    padding-bottom: 0.3rem;
+}
+.user-side ul li:after{
+    display:block;
+    background-color: transparent;
+    transition: width 0.5s ease; 
+}
+.user-side ul li:hover:after{
+    width:100%;
+    background-color: red;
+}
+.user-side ul li:hover:after{
+    width:100%;
+    background-color: red;
+}
+} 
+
+
+ 
+    
+
+
+

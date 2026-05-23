@@ -1,0 +1,240 @@
+*{
+    margin:0em;
+    padding: 0em;
+    border-style: none;
+    box-sizing: border-box;
+    
+}
+body{
+   font-family:90%'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   text-align: center;
+}
+.container{
+   
+   height:800px;
+    width:100%;     
+}
+header{
+    height:120px;
+   /* width:1920px;   */
+    background-color:#f5f2f2;
+}
+section{
+    margin-top: 0;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+     color: #f5f2f2;
+    text-decoration: none;
+    list-style: none;
+    height:650px;
+    width:100%; 
+}
+section h1{
+    text-align:center; 
+    font-size:2.2rem; 
+    color:white;                    
+}                                       
+footer{
+    height:150px;
+    width:100%;
+    background-color:black;
+}
+.nav-logo{
+    float:left;
+    position: absolute;
+    left:0.3em;
+    top: 0.3em;
+    padding-bottom:0.1rem;
+    opacity: 0.7;
+    z-index: 1;
+    width:1rem;
+    height:1rem;          
+}
+section .box{
+   
+     color: white;
+      text-decoration: none;
+       list-style: none;   
+    
+}
+/*-------------------------       -INDEX PAGE OPENING HOURS BOX      ____________________________________*/
+.box{
+    height:17rem;
+    width: 27rem;
+    align-items: center;
+    background-color:rgb(40, 45, 83);
+     margin:auto;
+    opacity:0.6;
+}
+    
+.container h1, h2 li{
+   align-items: center;
+   color:white;
+   text-align: center;
+} 
+
+/********************************                NAVIGATION   BAR           ***************************************/
+
+#home .index-container{
+  display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:center;
+    margin: 0 auto;
+    padding: 1rem;
+    width:100%;
+}
+.uni-name-nav{
+    display:flex;
+    flex-direction:column;
+}
+
+.uni-name-nav ul{
+    display:flex;
+    flex-direction: row;
+    list-style: none;
+}
+.uni-name-nav ul li{
+
+     padding: 0 2rem;
+    font-size: 1.3rem;
+    font-weight: 900;
+   
+}
+.uni-name-nav ul li a:hover
+{
+    border:1px solid red;
+    color: #551a1a; 
+    background-color: aliceblue;
+   
+}
+/********************************** admin dashboard     ************************/
+
+.collapse ul{
+   display: flex;
+   flex-direction: column;
+   width:20%;
+   float:left;
+   background-color: rgb(88, 66, 225);
+     height:800px;
+}
+
+/*--------------Navigational lins to Login, Register pages      ------------------------------------*/
+.sign-item{
+    display:flex;
+    flex-direction: row;
+    text-align: right;
+    list-style: none;
+    right:0;
+    top:0;
+    font-weight: 800;
+}
+
+h1{
+    font-size:2.1rem;
+    color: rgb(60, 11, 83);
+    font-weight: 700;
+    text-align: center;
+    
+}
+
+/**************************   Login page and admin page forms--*****************************************/
+#member-login, #admin-login{
+    width:32rem;
+    color:rgb(42, 3, 3); 
+   /*  color:hsl(266, 51%, 35%);     */
+     
+}
+#decor-member, #deocr-admin{
+    color: rgb(23, 23, 87); 
+}
+
+#decor-member{
+        background-color:hsl(230, 58%, 88%);
+        border:2px solid rgb(54, 10, 10);
+        padding:1.5rem;
+        max-width: 100%;
+        height:28rem;
+        margin:1.3rem;
+    }
+#decor-admin{
+        background-color: hsl(230, 58%, 88%);
+        border:2px solid rgb(61, 60, 60);
+        padding:1.3rem;
+        max-width: 100%; 
+        height:22rem; 
+        margin:1.2rem;
+}
+.form-group{
+    
+    text-align: left;
+}
+#login-box{
+   
+    padding: 1.2rem;
+    max-width:100%;
+}
+
+    /*-****************************************          REGISTER PAGE     ************************************--*/
+#register-box{
+    border:2px solid rgb(134, 134, 139);
+    background-color: hsl(230, 58%, 88%);
+    max-height: auto;
+    padding:1.3rem;
+    margin:1.4rem;
+    max-width: 100%;
+    text-align: left;
+    color:rgb(56, 56, 109); 
+}
+
+#register-box h1, a{
+    color:rgb(28, 7, 92);
+    font-weight:700;
+    text-align:center; 
+}
+span{
+    color:red;
+}
+
+h7{
+    color:rgb(72, 5, 82)
+}
+.text-info, .form-group{
+    color:rgb(14, 14, 239);
+}
+
+/********************************   USER DASHBOARD / BORROW/   BROWSE PAGE        **********************************/
+#user-dashboard{
+   
+    background-color: #cd9c7e;
+        border:2px solid rgb(54, 10, 10);
+        padding:1.2rem;
+        width: 100%;
+        height:28rem;
+        margin:1.2rem;
+        opacity:0.5;
+        list-style:none;
+        color:hsl(0, 24%, 96%);
+}
+#user-dashboard ul li{
+    list-style: none;
+    font-weight:800;
+    font-size: 1.2rem;
+    color:hsl(0, 24%, 96%);
+    padding:0.8rem; 
+}
+main{
+    height: 48rem;
+}
+#home .footer{
+
+    background-color: rgb(15, 15, 27);
+}
+
+
+ 
+    
+
+
+

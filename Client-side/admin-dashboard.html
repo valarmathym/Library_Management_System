@@ -1,0 +1,95 @@
+
+<?php
+$def with (session)
+$if session.login == 1:
+    $ log = "Logout"
+    $ url = "logout"
+$else:
+    $ log = "Login"
+    $ url = ""
+    ?>
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width-device-width, inital-scale=1">
+    <head>
+        <link rel="stylesheet" type="text/css" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <script src="/js/jquery.form.js"></script> 
+        
+          <style> 
+         section{
+            background-image: url('../Client-side/img/library-hero3.jpg');
+         }
+       </style>
+    </head>
+
+    <body>
+      <header id="home">
+           <nav class="nav">
+               <div class="index-container">
+                    <a href="#home" class="nav-logo">
+                    <img src="img/university-logo.png" id="au-logo" alt="AU logo" style="padding-top:1.6rem;"">
+                    </a>
+                   
+                    <input type="checkbox" id="menu-toggle">        
+                      <label for="menu-toggle" class="hamburger">
+                            <span class="bar"></span>            
+                            <span class="bar"></span>            
+                            <span class="bar"></span>                      
+                      </label>
+                    <div class="uni-name-nav"> 
+                      <h1>Australia University Library </h1>
+                      <ul class="nav-menu">
+                          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                          <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                          <li class="nav-item"><a href="collections.html" class="nav-link">Collections</a></li>
+                          <li class="nav-item"><a href="services.html" class="nav-link">Services</a></li>
+                      </ul>
+                     </div>
+                    <div> 
+                       <ul class="sign-item">
+                        
+                          <li><a href="logout.html" class="nav-link">Log Out</a></li>
+                        </ul>                        
+                   </div>
+            </div>    
+          </nav>
+       
+     
+
+          
+        </div>
+      </header>
+
+      <section>
+        <div class="main-header">
+          
+        </div>
+        <div class="jumbotron">
+          <div class="container col-md-4 col-centered placeholder">
+                <div id = "logininfo" style="display:none" class="text-center alert alert-danger" role="alert">
+                  You must login first!
+                </div>
+                <div id = "logoutinfo" style="display:none" class="text-center alert alert-success" role="alert">
+                  You are now logged out
+                </div>
+                <div id = "loginfailed" style="display:none" class="text-center alert alert-danger" role="alert">
+                  Sorry, Username or Password wrong!
+                </div>
+                <div id = "loginsucceed" style="display:none" class="text-center alert alert-success" role="alert">
+                  Login succeed!
+                </div>
+          </div>
+        </div>
+     </section>
+     <footer>
+      
+     </footer>
+    </body>
+</html>
+    
+</body>
+</html>
