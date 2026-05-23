@@ -1,5 +1,3 @@
-# Library_Management_System
-
 # Australia University Library Management System (LMS)
 ## 📌 Overview
 A web-based Australia University Library Management System built using PHP and MySQL. The system allows users to register, log in, browse books, borrow/return books, and enables admin-level book management, user management with secure session-based access.
@@ -18,7 +16,7 @@ borrows (id, user_id, book_id, borrow_date, return_date)
 ## ⚙️ Setup Instructions
 Import database into phpMyAdmin
 Configure database_template.php with DB credentials
-Run project using XAMPP/WAMP local server
+Run project using XAMPP local server
 Access via browser
 ## 🔐 Security Features
 Session-based authentication
