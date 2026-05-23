@@ -9,6 +9,10 @@ Session-based authentication and access control
 Secure backend database operations
 ## 🛠️ Tech Stack
 PHP • MySQL • SQL • HTML • CSS • phpMyAdmin
+## UseC ase Diagram
+<img width="628" height="458" alt="image" src="https://github.com/user-attachments/assets/e703e271-2924-46ea-a08a-aef19cfde1bf" />
+## Story Board 
+<img width="653" height="450" alt="image" src="https://github.com/user-attachments/assets/4116a34c-8198-470a-93e4-bb459c94b143" />
 ## 🗂️ Database Structure
 users (id, name, email, password, role)
 books (id, title, author, status, cover)
