@@ -11,7 +11,7 @@ Admin book management (add/update book status)
 Session-based authentication and access control
 Secure backend database operations
 ## 🛠️ Tech Stack
-PHP • MySQL • SQL • HTML • CSS • phpMyAdmin
+PHP • MySQL • SQL • HTML • CSS • XAMPP, phpMyAdmin, Apache Server
 ## Usecase Diagram
 
 <img width="400" height="300" alt="image" src="https://github.com/user-attachments/assets/e703e271-2924-46ea-a08a-aef19cfde1bf" />
